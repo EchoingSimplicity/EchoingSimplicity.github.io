@@ -1,0 +1,40 @@
+body{
+    background-image: url("https://img.sunset02.com/sites/default/files/styles/marquee_large_2x/public/image/2016/09/main/camping-western-guide-sites-washington-second-beach-0513.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;}
+header {
+    font-size: xx-large;
+    text-align: center;
+    padding: 25px;
+    margin: -10px;
+    margin-bottom: 10px;
+    font-family: "press Start 2P";
+    background-color: aquamarine;
+    border: 2px solid black;}
+div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 675px;
+    height: 675px;}
+div div {
+    width: 12%;
+    height: 12%;
+    outline: 1px solid;
+    float: left;
+    background-color: white;}
+.black {
+    background-color: black;}
+footer  {
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: 2px solid black;
+    text-align: center;
+    background-color: aquamarine;}
+#top{
+    margin-top: 10px;}
+#bottom{
+    margin-bottom: 10px;}
