@@ -1,0 +1,91 @@
+* {
+    font-family: Arial, Verdana, sans-serif;
+    color: whitesmoke;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: center;
+}
+
+#logo {font-family: "MontserratRegular";}
+
+nav {
+    background-color: #c6ffec;
+    padding: 5px;
+}
+
+footer {
+    background-color: #c6ffec;
+    padding-bottom: 1px;
+    border: 2px solid black;
+}
+
+body {
+    position: relative;
+    background: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701919386.jpg");
+}
+
+#content {
+    overflow: auto;
+}
+
+#nav, #feature, #footer {
+    margin: 1%;
+}
+
+.column1, .column2, .column3 {
+    width: 31.3%;
+    float: left;
+    margin: 1%;
+}
+
+.column1 {
+    background-color: #eeccfc;
+}
+
+.column2 {
+    background-color: #fccce4;
+}
+
+.column3 {
+    margin-right: 0%;
+    background-color: #fccccc;
+}
+
+li {
+    display: inline;
+    padding: 0.5em;
+}
+
+#nav, #footer {
+    background-color: #cdfed1;
+    padding: 0.5em 0;
+}
+
+#feature { 
+    
+    background-color: #ccfbfc;
+}
+
+#feature-image {
+    position: relative;
+    top: -63%;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    opacity: 0.5;
+}
+
+#feature-paragraph {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 32px;
+    position: relative;
+    top: -20%;
+    z-index: 10;
+}
+
+#feature, .article {
+    height: 10em;
+    margin-bottom: 1em;
+    border: 1px solid black;
+}
