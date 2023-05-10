@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifact 03</title>
+    <style>
+        #print {
+            font-family: monospace;
+            width: 100%;
+            max-width: 500px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>EchoingSimplicity/Asher Parker's Rhombus</h1>
+    <hr>
+    <form id="frm1">
+
+        <label for="height">Height: </label>
+        <input type="text" id="height" name="height"><br>
+
+        <label for="oddposition">Color of Odd Position: </label>
+        <select name="oddposition" id="oddposition">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select><br>
+
+        <label for="evenposition">Color of Even Position: </label>
+        <select name="evenposition" id="evenposition">
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+        </select><br>
+
+        <label for="symbol">Symbol: </label>
+        <select name="symbol" id="symbol">
+            <option value="*">*</option>
+            <option value="+">+</option>
+            <option value="Æ">Æ</option>
+        </select><br>
+    </form>
+    <button onclick="rhombus()">Try it</button>
+    <p id="print"></p>
+
+
+    <script>
+        function getConst(identity) {
+            const a = document.getElementById(identity);
+            return a.options[a.selectedIndex].value;
+        }
+        function ifColor() {
+
+        }
+
+        function rhombus() {
+            let height = parseInt(document.getElementById("height").value);
+            const odd = getConst("oddposition");
+            const even = getConst("evenposition");
+            const symbol = getConst("symbol");
+
+            if (height % 2 == 0) {
+                height++;
+            }
+
+            let spaces = Math.floor(height / 2);
+            let sym = 1;
+            let color = odd;
+            let text = "";
+
+            for (let i = 0; i < height; i++) {
+                let row = "";
+
+                for (let j = 0; j < spaces; j++) {
+                    row += " ";
+                }
+                for (let j = 0; j < sym; j++) {
+                    if (color == odd) {
+                        row += "<span style='color: " + color + ";'>" + symbol + "</span>";
+                        color = even;
+                    } else {
+                        row += "<span style='color: " + color + ";'>" + symbol + "</span>";
+                        color = odd;
+                    }
+                }
+                text += row + "<br>";
+
+                if (i < Math.floor(height / 2)) {
+                    spaces--;
+                    sym += 2;
+                } else {
+                    spaces++;
+                    sym -= 2;
+                }
+            }
+            document.getElementById("print").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>
