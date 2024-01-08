@@ -1,0 +1,73 @@
+* {
+    font-family: sans-serif;
+    color: whitesmoke;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: center;
+}
+
+#logo {font-family: "sans-serif";}
+
+footer {
+    background-color: #c6ffec;
+    padding-bottom: 1px;
+    border: 2px solid black;
+}
+
+body {
+    position: relative;
+    background: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701919386.jpg");
+}
+
+#nav, #feature, #footer {
+    margin: 1%;
+}
+
+.column2 {
+    width: auto;
+    margin: auto;
+    background-color: #fccce400;
+}
+
+#asher-image {
+    width: 25%;
+    border: 3px solid black;
+}
+
+li {
+    display: inline;
+    padding: 0.5em;
+}
+
+#nav, #footer {
+    background-color: #cdfed1;
+    padding: 0.5em 0;
+}
+
+#feature { 
+    
+    background-color: #ccfbfc;
+}
+
+#feature-image {
+    position: relative;
+    top: -106px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    opacity: 0.5;
+}
+
+#feature-paragraph {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 32px;
+    position: relative;
+    top: 0%;
+    z-index: 10;
+}
+
+#feature, .article {
+    height: 10em;
+    margin-bottom: 1em;
+}
