@@ -1,0 +1,52 @@
+
+fieldset {
+    background-color:rgb(255,246,205);	
+    border:1px solid rgb(233,69,0);
+    margin:10px 0px 30px 2.5%;
+    width:30%;
+}
+
+/*  this overides the generic fieldset css setting for this item by id */
+#fieldset2 {
+    background-color:rgb(217, 227, 235);	
+    border:1px solid rgb(0, 167, 233);
+    margin:10px 0px 30px 2.5%;
+    width:30%;
+}
+
+label{
+    display: inline-block;
+    width: 80px; /* Adjust the width of labels as needed */
+    text-align: right;
+    margin-right: 10px;
+}
+
+input{
+    margin-bottom: 3px;
+}
+
+.cat{
+    position: absolute;
+    top: 0%;
+    left: 35%;
+}
+.catMove{
+    position: absolute;
+    display: block;
+}
+
+#cat1{
+    display: block;
+}
+
+#cat2{
+    display: none;
+}
+
+#cat{
+    display: none;
+}
+
+#catConfused{
+    display: none;
+}

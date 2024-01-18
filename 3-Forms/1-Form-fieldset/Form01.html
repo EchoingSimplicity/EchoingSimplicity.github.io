@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Form Example 1</title>
+      <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+  <h1>EchoingSimplicity's Website</h1>
+  <!-- forms started with the idea of sending enclosed data back up to a webiste -->
+  <!-- <form name = "mainFrom" action="http:// mywebsite/action_page"></form> -->
+  <!-- <input type="submit" >  shows a submit button-->
+  <!-- which we may well do in other projects later, but for now, 
+    we want to got to a js function -->
+
+  <form name = "mainFrom" onsubmit="return false"></form>
+
+<!--       The <fieldset> tag is used to group related elements in a form. -->
+	<fieldset id="fieldset1">
+    <!--       The <legend> tag is puts a title on this subset of the form -->
+    <legend>Start Here!</legend>
+    <!--       for= some id connects the lable to to the input box -->
+    <!-- "Click for new user!" -->
+    <input type="button" value="Click for new user!" onclick="newUser()">
+    <!-- "Click for existing user!" -->
+    <input type="button" value="Click for existing user!" onclick="oldUser()">
+    <!-- here we submit to a local js file -->
+    | <input type="submit" value="Reset" onclick="reset()">
+    <input type="submit" value="Cycle cats!" onclick="catAdd()">
+    </fieldset>
+    
+	<fieldset id="fieldset2">
+    <legend>new user!!</legend>
+    
+    <label for="username">Username:</label> 
+    <input name="username" id="username" />
+    <br />
+    <label for="password">Password:</label>
+    <input name="password" id="password" />
+    <br />
+    <label for="city">City:</label> 
+    <input name="city" id="city" />
+    <br />
+    <label for="state">State:</label>
+    <input name="state" id="state" />
+    
+    <!--change onclick for this-->
+    <br />
+    <input type="submit" value="--->Login<---" onclick="newLogin()" style="margin-left: 95px;">
+
+    <!--save key-value pairs-->
+    </fieldset>
+
+    <fieldset id="fieldset3">
+      <legend>existing user!!</legend>
+          
+      <label for="username1">Username:</label> 
+      <input name="username1" id="username1" />
+      <br />
+      <label for="password1">Password:</label>
+      <input name="password1" id="password1" />
+
+      <!--check if match values stored-->
+      <br /><input type="submit" value="--->Login<---" onclick="oldLogin()" style="margin-left: 95px;">
+    </fieldset>
+  </form>
+  <div id="cat1" class="catMove"><pre>
+  _
+ ( \
+  \ \
+  / /                |\\
+ / /     .-`````-.   / ^`-.
+ \ \    /         \_/  {|} `o
+  \ \  /   .---.   \\ _  ,--'
+   \ \/   /     \,  \( `^^^
+    \   \/\      (\  )
+     \   ) \     ) \ \
+      ) /__ \__  ) (\ \___
+     (___)))__))(__))(__)))
+  </pre></div>
+  <div id="cat2" class="catMove"><pre>
+             _ 
+            / ) 
+           / /  
+          / /               /\ 
+         / /     .-```-.   / ^`-.  
+         \ \    /       \_/  (|) `o 
+          \ \  /   .-.   \\ _  ,--' 
+           \ \/   /   )   \( `^^^  
+            \   \/    (    )  
+             \   )     )  /     
+              ) /__    | (__  
+             (___)))   (__)))
+  </pre></div>
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><p><pre id="ground">        _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ </pre></p>
+<div id="cat" class="cat">
+  <pre>
+
+ cat!
+   _
+   \`*-.                    
+    )  _`-.                 
+   .  : `. .                
+   : _   '  \               
+   ; *` _.   `*-._          
+   `-.-'          `-.       
+     ;       `       `.     
+     :.       .        \    
+     . \  .   :   .-'   .   
+     '  `+.;  ;  '      :   
+     :  '  |    ;       ;-. 
+     ; '   : :`-:     _.`* ;
+  .*' /  .*' ; .*`- +'  `*' 
+  `*-*   `*-*  `*-*'
+  </pre>
+</div>
+<div id="catConfused" class="cat">
+  <pre>    
+    　　　　/￣￣￣￣￣\
+　　　　　　|   oops!  |
+　　　　　  \_________/
+    ,_     _v
+    |\\_,-~/
+    / _  _ |    ,--.
+   (  @  @ )   / ,-'
+    \  _T_/-._( (
+    /         `. \
+   |         _  \ |
+    \ \ ,  /      |
+     || |-_\__   /
+    ((_/`(____,-'
+  </pre>
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
