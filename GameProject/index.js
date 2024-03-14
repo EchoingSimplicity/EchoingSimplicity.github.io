@@ -50,7 +50,7 @@ var render = function () {
         ctx.drawImage(heroImage, hero.x, hero.y);
     }
     if (monsterReady) {
-        monsterImage.src = `/images/monster/${monster.orientation}.png`;
+        monsterImage.src = `/GameProject/images/monster/${monster.orientation}.png`;
         ctx.drawImage(monsterImage, monster.x, monster.y);
     }
     if (targetReady) {
@@ -181,11 +181,11 @@ var hero = {
     image: 1,
     updateSprite: function () {
         if(flip){
-            heroImage.src = `images/character/${this.image}f.png`;
+            heroImage.src = `/GameProject/images/character/${this.image}f.png`;
         }else{
-            heroImage.src = `images/character/${this.image}.png`;
+            heroImage.src = `/GameProject/images/character/${this.image}.png`;
         }
-        console.log(`images/character/${this.image}.png`)
+        console.log(`/GameProject/images/character/${this.image}.png`)
         if(this.image < 8){
             this.image++;
         }else{
