@@ -24,7 +24,7 @@ document.body.appendChild(canvas);
 // Background Image
 var bgReady = true;
 var bgImage = new Image();
-bgImage.src = "images/SpaceBG.png";
+bgImage.src = "/GameProject/images/SpaceBG.png";
 
 //Edges
 // Background Image
@@ -41,22 +41,22 @@ var edg2Image = new Image();
 edg2Image.onload = function () {
     edg2Ready = true;
 }
-//edg2Image.src = "images/.png";
+//edg2Image.src = "/GameProject/images/.png";
 
 // Hero Image
 var heroReady = true;
 var heroImage = new Image();
-heroImage.src = "images/character/1.png";
+heroImage.src = "/GameProject/images/character/1.png";
 
 // Monster image
 var monsterReady = true;
 var monsterImage = new Image();
-monsterImage.src = "images/monster.png";
+monsterImage.src = "/GameProject/images/monster.png";
 
 // Target image
 var targetReady = true;
 var targetImage = new Image();
-targetImage.src = "images/target.png";
+targetImage.src = "/GameProject/images/target.png";
 
 export { 
     canvas, ctx,
